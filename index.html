@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERMERCADO DE MARTINEZ MEZA</title>
+</head>
+<body background="img/fondo.jpg">
+    <h1>SUPERMERCADO DE MARTINEZ MEZA</h1>
+    <div>
+        <table>
+            <tr>
+                <td>
+        <div class="producto">
+            <a href="soda.html"><img src="img/imagen7.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c1"> Cantidad
+            <input type="text" value="0" id="p1"> Precio
+            
+        </div>
+    </td>
+    <td>
+        <div class="producto">
+            <a href="leche.html"><img src="img/imagen3.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c2"> Cantidad
+            <input type="text" value="0" id="p2"> Precio
+        </div>
+    </td>
+    <td>
+         <div class="producto">
+            <a href="frutas.html"><img src="img/imagen2.png" height="200" width="150"></a>
+            <input type="text" value="0" id="c3"> Cantidad
+            <input type="text" value="0" id="p3"> Precio
+        </div>
+
+    </td>
+</tr>
+<tr>
+                <td>
+        <div class="producto">
+            <a href="pan.html"><img src="img/imagen4.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c4"> Cantidad
+            <input type="text" value="0" id="p4"> Precio
+        </div>
+    </td>
+    <td>
+        <div class="producto">
+            <a href="papitas.html"><img src="img/imagen6.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c5"> Cantidad
+            <input type="text" value="0" id="p5"> Precio
+        </div>
+    </td>
+    <td>
+         <div class="producto">
+            <a href="arroz.html"><img src="img/imagen5.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c6"> Cantidad
+            <input type="text" value="0" id="p6"> Precio
+        </div>
+
+    </td>
+</tr>
+<tr>
+                <td>
+        <div class="producto">
+            <a href="carne.html"><img src="img/imagen1.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c7"> Cantidad
+            <input type="text" value="0" id="p7"> Precio
+        </div>
+    </td>
+    <td>
+        <div class="producto">
+            <a href="Helado.html"><img src="img/imagen8.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c8"> Cantidad
+            <input type="text" value="0" id="p8"> Precio
+        </div>
+    </td>
+    <td>
+         <div class="producto">
+            <a href="atun.html"><img src="img/imagen9.jpg" height="200" width="150"></a>
+            <input type="text" value="0" id="c9"> Cantidad
+            <input type="text" value="0" id="p9"> Precio
+        </div>
+
+    </td>
+</tr>
+     </table>   
+    </div>
+    <button class="button" onclick="calcularTotal()">Obtener Resultado</button>
+<h2>Total: $<span id="total">0</span></h2>
+<script>
+        function calcularTotal() { 
+            let total = 0;
+            for (let i = 1; i <= 9; i++) {
+                total += document.getElementById('c' + i).value * document.getElementById('p' + i).value;
+            }
+ 
+            document.getElementById('total').innerText = total;
+            alert("El resultado es: " + resultado);
+ 
+        }
+</script>
+    <footer>
+        <p>Mtra Alondra Zavala -cbtis 206 - 2025
+        Erick Armadno Martinez Meza</p>
+    </footer>
+
+</body>
+</html>
